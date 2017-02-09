@@ -1,0 +1,18 @@
+<div class="container text-center">
+  <h1>All my ingredients</h1>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= link_to 'Create ingredient', new_ingredient_path, class: "btn btn-primary" %>
+</div>
+
+<hr>
+
+<div class="container">
+  <% @ingredients.each do |ingredient| %>
+    <p> <%= ingredient.name %> </p>
+    <hr>
+  <% end %>
+</div>

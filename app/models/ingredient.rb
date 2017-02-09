@@ -3,6 +3,7 @@ class Ingredient < ApplicationRecord
   before_destroy :check_for_cocktails
   validates :name, uniqueness: true, length: { minimum: 1 }
 
+
   private
 
   def check_for_cocktails
