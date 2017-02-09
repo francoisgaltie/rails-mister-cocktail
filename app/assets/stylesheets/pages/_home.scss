@@ -2,3 +2,29 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+.wrapper-main {
+  width: 1200px;
+}
+
+.banner {
+  background-image: image-url("cocktail_photo.jpeg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 60px;
+}
+
+.banner p {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: lighter;
+  padding-bottom: 25px;
+}
