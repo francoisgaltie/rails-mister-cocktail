@@ -1,0 +1,21 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="/assets/logo_mistercocktail.jpeg" />
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Search form -->
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search for a cocktail">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <!-- Button (call-to-action) -->
+    <%= link_to 'Submit recipe', new_cocktail_path, class:"navbar-wagon-item navbar-wagon-button btn" %>
+  </div>
+</div>

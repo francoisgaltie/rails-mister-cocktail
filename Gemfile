@@ -27,6 +27,8 @@ gem 'figaro'
 #IMAGES
 gem 'cloudinary', '1.1.0'
 gem 'carrierwave'
+gem "mini_magick"
+gem "fog-aws"
 
 #FRONT END
 gem 'bootstrap-sass'
