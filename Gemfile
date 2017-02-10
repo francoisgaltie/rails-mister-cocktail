@@ -24,6 +24,10 @@ gem 'coffee-rails', '~> 4.2'
 #SECURITY
 gem 'figaro'
 
+#IMAGES
+gem 'cloudinary', '1.1.0'
+gem 'carrierwave'
+
 #FRONT END
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

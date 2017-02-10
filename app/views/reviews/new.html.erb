@@ -1,0 +1,22 @@
+<div class="container text-center">
+  <h1>Create a review for <%= @cocktail.name %></h1>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= render 'form' %>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= link_to "Back", cocktails_path, :class => "btn btn-primary" %>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= link_to "See cocktail details", cocktail_path(@cocktail), :class => "btn btn-success" %>
+</div>
+

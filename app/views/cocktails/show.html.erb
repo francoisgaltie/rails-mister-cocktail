@@ -3,7 +3,10 @@
 </div>
 
 <div class="container">
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+</div>
 
+<div class="container">
      <ul>
         <% @cocktail.doses.each do |dose| %>
         <li>
@@ -17,5 +20,30 @@
 </div>
 
 <div class="container">
+  <% @cocktail.reviews.each do |review| %>
+  <p>
+    User review: <%= review.comment %>
+  </p>
+  <p>
+    Rating: <%= review.stars %>
+  </p>
+  <% end %>
+</div>
+
+
+
+<div class="container">
   <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= link_to 'Add a review', new_cocktail_review_path(@cocktail), :class => "btn btn-success" %>
+</div>
+
+<hr>
+
+<div class="container">
+  <%= link_to 'Back', cocktails_path, class: "btn btn-primary" %>
 </div>

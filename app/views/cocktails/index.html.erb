@@ -6,19 +6,22 @@
   </div>
 </div>
 
-<div class="container">
-<% @cocktails.each do |cocktail| %>
-  <hr>
-  <p><%= cocktail.name %></p>
-  <p><%= link_to "Show cocktail details", cocktail_path(cocktail) %></p>
-  <p><%= link_to "Delete cocktail", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" } %></p>
-<% end -%>
+<div class="container-fluid">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('background.jpg');">
+          <div class="card-description">
+            <h2> <%= cocktail.name %> </h2>
+            <p> <%= cocktail.reviews.count %> reviews </p>
+          </div>
+          <img class="card-user avatar" src="user.jpg">
+          <%= link_to "Show cocktail details", cocktail_path(cocktail) %>
+          <%= link_to "Delete cocktail", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" } %>
+        </div>
+      </div>
+    <% end -%>
+  </div>
 </div>
-
-
-<div class="wrapper-main">
-
-</div>
-
 
 
