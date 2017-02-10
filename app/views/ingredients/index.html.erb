@@ -11,7 +11,7 @@
 <hr>
 
 <div class="container">
-  <% @ingredients.each do |ingredient| %>
+  <% @ingredients.order(:name).each do |ingredient| %>
     <p> <%= ingredient.name %> </p>
     <hr>
   <% end %>
